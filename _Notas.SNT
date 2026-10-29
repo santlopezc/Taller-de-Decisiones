@@ -1,0 +1,33 @@
+Algoritmo _Notas
+    Definir n1, n2, n3, n4, n5, promedio Como Real
+	
+    Escribir "Ingrese la primera nota:"
+    Leer n1
+	
+    Escribir "Ingrese la segunda nota:"
+    Leer n2
+	
+    Escribir "Ingrese la tercera nota:"
+    Leer n3
+	
+    Escribir "Ingrese la cuarta nota:"
+    Leer n4
+	
+    Escribir "Ingrese la quinta nota:"
+    Leer n5
+	
+    Si (n1 < 0 O n1 > 5) O (n2 < 0 O n2 > 5) O (n3 < 0 O n3 > 5) O (n4 < 0 O n4 > 5) O (n5 < 0 O n5 > 5) Entonces
+        Escribir "Error: las notas deben estar entre 0 y 5."
+    SiNo
+        promedio <- (n1+n2+n3+n4+n5)/5
+		
+        Escribir "Nota definitiva: ", promedio
+		
+        Si promedio > 3.5 Entonces
+            Escribir "El estudiante gano el curso."
+        SiNo
+            Escribir "El estudiante perdio el curso."
+        FinSi
+    FinSi
+	
+FinAlgoritmo
